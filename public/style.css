@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2A3335;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin-inline: 15px;
+    margin-block: 25px;
+    width: 85%;
+    /* max-width: 300px; */
+    padding-inline: 15px;
+    padding-block: 7px;
+    background-color: #2A3335;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+
+form {
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+button {
+    margin: 15px;
+    padding: 8px;
+    width: 130px;
+    background-color: rgb(220, 21, 21);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(220, 21, 21);
+    border-radius: 10px;
+}
+
+#parCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    margin-block: 15px;
+    outline: 1px solid;
+    height: 90vh;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    background-color: #1c68b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+}
+
+#contDisplay {
+    outline: 1px solid;
+    width: 100%;
+    max-width: 500px;
+    margin-block: 25px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #424242;
+    border-radius: 5px;
+    border: none;
+}
+
+#createBtn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+
+#contact {
+    padding-inline: 30px;
+    border: 1px solid;
+    border-bottom-color: black;
+}
+
+#contact:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.579);
+}
+
+#dltContact {
+    display: flex;
+    align-items: center;
+}
+
+#parntCreateBtn {
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: 10px;
+}
+
+#displayContact {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    outline: 1px solid;
+    margin-block: 15px;
+    background-color: #424242;
+    border-radius: 10px;
+    border: none;
+}
+
+#parntDltBtn {
+    display: flex;
+    justify-content: center;
+}
+
+#parntForm {
+    width: 100%;
+    height: 60%;
+    background-color: green;
+}
+
+.contData {
+    color: rgba(255, 255, 255, 0.81)
+}

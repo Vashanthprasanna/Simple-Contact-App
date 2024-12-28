@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="parCont">
+        <div id="container">
+
+            <div id="displayContact">
+                <div style="margin-inline: 10px;">
+                    <h3 class="contData"> Name : </h3>
+                    <h3 class="contData"> Mobile No : </h3>
+                    <h3 class="contData"> Street : </h3>
+                    <h3 class="contData"> District : </h3>
+                    <h3 class="contData"> State : </h3>
+                </div>
+                
+                <div style="margin-inline: 10px;">
+                    <h3>
+                        <%= Contact.name %>
+                            </>
+                            <h3>
+                                <%= Contact.mobile %>
+                            </h3>
+                            <h3>
+                                <%= Contact.street %>
+                            </h3>
+                            <h3>
+                                <%= Contact.district %>
+                            </h3>
+                            <h3>
+                                <%= Contact.state %>
+                            </h3>
+                </div>
+            </div>
+
+            <div id="parntDltBtn">
+                <button id="dlt">Delete</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const dltBtn = document.getElementById("dlt");
+
+        dltBtn.addEventListener("click", () => {
+            fetch('/<%= id %>', { method: 'DELETE' })
+                .then(response => response.json())
+                .then(data => window.location.href = data.redirect)
+                .catch(err => res.send(err))
+        });
+    </script>
+
+</body>
+
+</html>
